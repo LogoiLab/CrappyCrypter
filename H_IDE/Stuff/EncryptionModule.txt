@@ -1,0 +1,12 @@
+Function decrypt(ByVal %1% As Byte(), ByVal %2% As String) As Byte()
+Dim %3% As Byte() = System.Text.Encoding.Default.GetBytes(%2%)
+Dim %4% As Integer = %1%(%1%.Length - 1) Xor 112
+Dim %5%(%1%.Length) As Byte
+Dim %6% As Integer
+For %7% As Integer = 0 To %1%.Length - 1
+%5%(%7%) = (%1%(%7%) Xor %4%) Xor %3%(%6%)
+If %6% = %2%.Length - 1 Then %6% = 0 Else %6% = %6% + 1
+Next
+ReDim Preserve %5%(%1%.Length - 2)
+Return %5%
+End Function

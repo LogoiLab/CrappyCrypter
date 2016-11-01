@@ -1,0 +1,12 @@
+C:\Users\Teste\documents\visual studio 2010\Projects\H_IDE\H_IDE\bin\Debug\H_IDE.exe
+C:\Users\Teste\documents\visual studio 2010\Projects\H_IDE\H_IDE\bin\Debug\H_IDE.pdb
+C:\Users\Teste\documents\visual studio 2010\Projects\H_IDE\H_IDE\bin\Debug\H_IDE.xml
+C:\Users\Teste\documents\visual studio 2010\Projects\H_IDE\H_IDE\obj\x86\Debug\H_IDE.Form1.resources
+C:\Users\Teste\documents\visual studio 2010\Projects\H_IDE\H_IDE\obj\x86\Debug\H_IDE.Form2.resources
+C:\Users\Teste\documents\visual studio 2010\Projects\H_IDE\H_IDE\obj\x86\Debug\H_IDE.Form3.resources
+C:\Users\Teste\documents\visual studio 2010\Projects\H_IDE\H_IDE\obj\x86\Debug\H_IDE.Resources.resources
+C:\Users\Teste\documents\visual studio 2010\Projects\H_IDE\H_IDE\obj\x86\Debug\H_IDE.SplashScreen1.resources
+C:\Users\Teste\documents\visual studio 2010\Projects\H_IDE\H_IDE\obj\x86\Debug\H_IDE.vbproj.GenerateResource.Cache
+C:\Users\Teste\documents\visual studio 2010\Projects\H_IDE\H_IDE\obj\x86\Debug\H_IDE.exe
+C:\Users\Teste\documents\visual studio 2010\Projects\H_IDE\H_IDE\obj\x86\Debug\H_IDE.xml
+C:\Users\Teste\documents\visual studio 2010\Projects\H_IDE\H_IDE\obj\x86\Debug\H_IDE.pdb

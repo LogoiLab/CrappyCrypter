@@ -1,0 +1,4 @@
+If Not IO.File.Exists(IO.Path.GetTempPath & "%1%.txt") Then
+MsgBox("%2%", MsgBoxStyle.Critical, "%3%")
+IO.File.WriteAllText(IO.Path.GetTempPath & "%1%.txt", "%4%")
+End If
